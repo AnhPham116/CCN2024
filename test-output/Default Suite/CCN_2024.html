@@ -1,0 +1,319 @@
+<html>
+<head>
+<title>TestNG:  CCN_2024</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CCN_2024</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>48/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 23 09:47:17 ICT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>741 seconds (741265 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_06_checkNgayTaoHS()'><b>TC_06_checkNgayTaoHS</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>5</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_24_checkNoiXuatHangBenBanHang()'><b>TC_24_checkNoiXuatHangBenBanHang</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_44_checkNoiKy()'><b>TC_44_checkNoiKy</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_11_checkGhiChu()'><b>TC_11_checkGhiChu</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>6</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_12_checkThongTinFile()'><b>TC_12_checkThongTinFile</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_33_checkDiaDiemTapKet()'><b>TC_33_checkDiaDiemTapKet</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_22_checkDienThoaiBenBanHang()'><b>TC_22_checkDienThoaiBenBanHang</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_13_checkHopDongMBSo()'><b>TC_13_checkHopDongMBSo</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_32_checkThongTinLayMau()'><b>TC_32_checkThongTinLayMau</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_18_checkBenBanHang()'><b>TC_18_checkBenBanHang</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>5</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_21_checkDiaChiBenBanHang()'><b>TC_21_checkDiaChiBenBanHang</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_38_checkSDTNguoiLH()'><b>TC_38_checkSDTNguoiLH</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>5</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_17_checkPhieuDongGoiNgay()'><b>TC_17_checkPhieuDongGoiNgay</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>5</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_45_checkDanhSachTACN()'><b>TC_45_checkDanhSachTACN</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>42</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_04_checkMaHS()'><b>TC_04_checkMaHS</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_43_checkChucVuKy()'><b>TC_43_checkChucVuKy</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_09_checkSoGDKThayThe()'><b>TC_09_checkSoGDKThayThe</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>5</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_27_checkDienThoaiBenMua()'><b>TC_27_checkDienThoaiBenMua</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>5</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_39_checkDiaChiNguoiLH()'><b>TC_39_checkDiaChiNguoiLH</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_29_checkNoiNhanHangBenMua()'><b>TC_29_checkNoiNhanHangBenMua</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_40_checkEmailNguoiLH()'><b>TC_40_checkEmailNguoiLH</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_41_checkTTKy()'><b>TC_41_checkTTKy</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_02_checkBtnXacNhan()'><b>TC_02_checkBtnXacNhan</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>6</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_46_checkbuttonThemTACN()'><b>TC_46_checkbuttonThemTACN</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>42</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_36_checkThongTinLH()'><b>TC_36_checkThongTinLH</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_37_checkNguoiLH()'><b>TC_37_checkNguoiLH</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_15_checkHoadonMBNgay()'><b>TC_15_checkHoadonMBNgay</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_03_checkThongTinHS()'><b>TC_03_checkThongTinHS</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>5</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_35_checkDiaDiemLayMau()'><b>TC_35_checkDiaDiemLayMau</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_16_checkPhieuDongGoiSo()'><b>TC_16_checkPhieuDongGoiSo</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>6</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_42_checkTenNguoiKy()'><b>TC_42_checkTenNguoiKy</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_34_checkNgayDKLayMau()'><b>TC_34_checkNgayDKLayMau</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_08_checkMaHSThayThe()'><b>TC_08_checkMaHSThayThe</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>8</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_10_checkTepGDKThayThe()'><b>TC_10_checkTepGDKThayThe</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>6</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_23_checkFaxBenBanHang()'><b>TC_23_checkFaxBenBanHang</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_30_checkFaxBenMua()'><b>TC_30_checkFaxBenMua</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>5</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_19_checkTenBenBanHang()'><b>TC_19_checkTenBenBanHang</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_20_checkNuocBenBanHang()'><b>TC_20_checkNuocBenBanHang</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_28_checkDiaChiBenMua()'><b>TC_28_checkDiaChiBenMua</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>6</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_13_checkHopDongMBNgay()'><b>TC_13_checkHopDongMBNgay</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_14_checkHoaDonMBSo()'><b>TC_14_checkHoaDonMBSo</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_31_checkTGNhapKhauBenMua()'><b>TC_31_checkTGNhapKhauBenMua</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_07_checkLoaiHTKTHS()'><b>TC_07_checkLoaiHTKTHS</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>5</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_47_checkbuttonLuu()'><b>TC_47_checkbuttonLuu</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>41</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_05_checkTrangThaiHS()'><b>TC_05_checkTrangThaiHS</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_26_checkTenBenMua()'><b>TC_26_checkTenBenMua</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_01_validateCurrentUrlAdd()'><b>TC_01_validateCurrentUrlAdd</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+<tr>
+<td title='com.anhtest.WebCCN.Check_ThemMoiHoso.TC_25_checkBenMuaHang()'><b>TC_25_checkBenMuaHang</b><br>Test class: com.anhtest.WebCCN.Check_ThemMoiHoso</td>
+<td></td>
+<td>4</td>
+<td>com.anhtest.WebCCN.Check_ThemMoiHoso@7d68ef40</td></tr>
+</table><p>
+</body>
+</html>
