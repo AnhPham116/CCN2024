@@ -8,11 +8,12 @@ import com.anhtest.Locators.locator_CCN;
 
 public class LoginTest extends BaseTest {
 
+    //run3phut
 
     @Test(priority = 1)
     public void TC_01_validateCurrentUrl(){
         String loginPageUrl = driver.getCurrentUrl();
-        Assert.assertEquals(loginPageUrl,"http://10.10.10.90:3001/auth/login");
+        Assert.assertEquals(loginPageUrl,"http://dnccn.earchive.vn/auth/login");
     }
 
     @Test (priority = 2)
@@ -22,7 +23,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(header1,"ĐĂNG NHẬP HỆ THỐNG","Giá trị sai");
 
         String header2 = driver.findElement(By.xpath(locator_CCN.headerLogin2)).getText();
-        Assert.assertEquals(header2,"Hệ thống đăng ký thủ tục Cục chăn nuôi dành cho doanh nghiệp.","Giá trị sai");
+        Assert.assertEquals(header2,"Hệ thống đăng ký thủ tục dành cho doanh nghiệp.","Giá trị sai");
     }
 
     @Test (priority = 3)
@@ -37,8 +38,8 @@ public class LoginTest extends BaseTest {
 
         driver.findElement(By.xpath(locator_CCN.linkForgotPassword)).click();
         // Kiểm tra xem đã điều hướng đến trang khác hay chưa
-        String currentUrl1 = driver.getCurrentUrl();
-        Assert.assertNotEquals(currentUrl1, "http://10.10.10.90:3001/auth/forgotpassword", "Navigation failed");
+        String urlForgotPass = driver.getCurrentUrl();
+        Assert.assertEquals(urlForgotPass, "http://dnccn.earchive.vn/auth/forgotpassword", "Navigation failed");
     }
 
     @Test (priority = 5)
@@ -46,8 +47,8 @@ public class LoginTest extends BaseTest {
 
         driver.findElement(By.xpath(locator_CCN.linkDangKy)).click();
         // Kiểm tra xem đã điều hướng đến trang khác hay chưa
-        String currentUrlcheck = driver.getCurrentUrl();
-        Assert.assertNotEquals(currentUrlcheck, "http://10.10.10.90:3001/auth/register", "Navigation failed");
+        String checkurl = driver.getCurrentUrl();
+        Assert.assertEquals(checkurl, "http://dnccn.earchive.vn/auth/register", "Navigation failed");
     }
 
     @Test (priority = 6)

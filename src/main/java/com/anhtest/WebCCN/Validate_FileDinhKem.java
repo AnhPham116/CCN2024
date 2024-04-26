@@ -16,12 +16,13 @@ public class Validate_FileDinhKem extends BaseTest {
     String userName = "6666688888";
     String passWord = "123456aA@";
 
-    public void login(){
+    public void login() {
         driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys(userName);
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys(passWord);
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
         driver.findElement(By.xpath(locator_CCN.dangKiKiemTra)).click();
+
 
         sleep(2);
 
@@ -31,9 +32,9 @@ public class Validate_FileDinhKem extends BaseTest {
 
     }
 
-    @Test (priority = 1)
-    public void TC01_btnXacNhan(){
-       login();
+    @Test(priority = 1)
+    public void TC01_btnXacNhan() {
+        login();
 
         WebElement browseButton = driver.findElement(By.xpath("//p[@class='ml-2']"));
 
@@ -74,13 +75,13 @@ public class Validate_FileDinhKem extends BaseTest {
         sleep(7);
 
         boolean checkBtnXacNhan = driver.findElement(By.xpath(locator_CCN.buttonXacNhan)).isEnabled();
-        Assert.assertTrue(checkBtnXacNhan,"Button Xác nhận không được bật");
+        Assert.assertTrue(checkBtnXacNhan, "Button Xác nhận không được bật");
     }
 
-    @Test (priority = 2)
-    public void TC02_PhanLoaiThanhCong(){
+    @Test(priority = 2)
+    public void TC02_PhanLoaiThanhCong() {
 
-       login();
+        login();
 
         WebElement browseButton = driver.findElement(By.xpath("//p[@class='ml-2']"));
 
@@ -120,14 +121,14 @@ public class Validate_FileDinhKem extends BaseTest {
         sleep(3);
 
         driver.findElement(By.xpath(locator_CCN.buttonXacNhan)).click();
-        sleep(15);
+        sleep(30);
 
         String filesucess = driver.findElement(By.xpath(locator_CCN.filesucess)).getText();
-        Assert.assertEquals(filesucess,"Đã phân loại tài liệu thành công","Thông báo sai");
+        Assert.assertEquals(filesucess, "Đã phân loại tài liệu thành công", "Thông báo sai");
     }
 
-    @Test (priority = 3)
-    public void TC03_FileLoi(){
+    @Test(priority = 3)
+    public void TC03_FileLoi() {
         login();
         WebElement browseButton = driver.findElement(By.xpath("//p[@class='ml-2']"));
 
@@ -171,10 +172,9 @@ public class Validate_FileDinhKem extends BaseTest {
         sleep(6);
 
         String fileLoi = driver.findElement(By.xpath(locator_CCN.fileLoi)).getText();
-        Assert.assertEquals(fileLoi,"File 23LM611.pdf lỗi","Thông báo sai");
+        Assert.assertEquals(fileLoi, "File 23LM611.pdf lỗi", "Thông báo sai");
 
     }
-
 
 
 }

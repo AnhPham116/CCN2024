@@ -165,7 +165,7 @@ public class locator_CCN {
     public static String chiTietHoSo = "body > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > table:nth-child(2) > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(4) > a:nth-child(1)";
     public static String btnGui= "//button[contains(text(),'Gửi hồ sơ')]";
     //Thêm thức ăn chăn nuôi
-    public static String buttonThemTACN = "//button[contains(@class,'inline-flex flex-shrink-0 justify-center items-center text-white border border-white hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1.5 text-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500 disabled:hidden')]//*[name()='svg']";
+    public static String buttonThemTACN = "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[1]";
     public static String txtDSTACN = "//p[contains(text(),'Danh sách thức ăn chăn nuôi')]" ;
     public static String buttonLuu = "//button[@id='btn_taomoi']";
 
@@ -187,6 +187,9 @@ public class locator_CCN {
     //Chọn TACN
     public static String msgTenTA = "//div[@class='grid']//p[@class='text-red-500 text-sm mt-1'][contains(text(),'Thông tin bắt buộc nhập')]";
 
+    public static String msgNhomTA = "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/form[1]/div[2]/div[1]/div[2]/div[1]/div[3]/p[1]";
+    public static String msgPhanNhomTA = "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/form[1]/div[2]/div[1]/div[2]/div[1]/div[3]/p[1]";
+    public static String msgLoaiTA = "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/form[1]/div[2]/div[1]/div[2]/div[1]/div[4]/p[1]";
     public static String inputHangSX = "//input[@id='tacn_hangsanxuat']";
     public static String inputDangMau = "//input[@id='tacn_dang_mau']";
     public static String inputSoHieuTCCS = "//input[@id='tacn_sohieu_tieuchuan']";
@@ -223,7 +226,7 @@ public class locator_CCN {
     public static String msgGiaTriUSD = "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/form[1]/div[2]/div[5]/div[2]/div[1]/div[3]/p[1]";
 
     //ButtonThem/Sua
-    public static String buttonThem_Sua = "//button[contains(text(),'Thêm / Sửa')]";
+    public static String buttonThem_Sua = "//button[contains(text(),'Thêm/Sửa')]";
     public static String buttonThoat_TACN = "//div[contains(@class,'flex justify-center w-full')]//button[contains(@type,'button')][normalize-space()='Thoát']";
 
     //Button Lưu

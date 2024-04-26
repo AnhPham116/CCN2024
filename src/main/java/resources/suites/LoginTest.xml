@@ -6,27 +6,41 @@
             <class name="com.anhtest.WebCCN.LoginTest">
                 <methods>
                     <include name="TC_01_validateCurrentUrl"></include>
-                    <include name="TC_02_checkHeader_ButtonLogin"></include>
-                    <include name="TC_03_checkbuttonLogin"></include>
-                    <include name="TC_04_checkLinkQuenMK"></include>
-                    <include name="TC_05_checkLinkDangKy"></include>
-                    <include name="TC_06_trongTenDangNhap"></include>
-                    <include name="TC_07_trongMatKhau"></include>
-                    <include name="TC_08_saiTenDangNhap"></include>
-                    <include name="TC_09_tenDNNhoHon10KyTu"></include>
-                    <include name="TC_10_tenDNLonHon10KyTu"></include>
-                    <include name="TC_11_tenDNKyTuKhac"></include>
-                    <include name="TC_12_loginSuccess"></include>
-                    <include name="TC_13_MKSai"></include>
-                    <include name="TC_14_MKThieuChuHoaKyTuDacBiet"></include>
-                    <include name="TC_15_MKThieuChuHoa"></include>
-                    <include name="TC_16_MKThieuChuThuong"></include>
-                    <include name="TC_17_MKThieuKyTuDacBiet"></include>
-                    <include name="TC_18_validateMatkhau"></include>
+<!--                    <include name="TC_02_checkHeader_ButtonLogin"></include>-->
+<!--                    <include name="TC_03_checkbuttonLogin"></include>-->
+<!--                    <include name="TC_04_checkLinkQuenMK"></include>-->
+<!--                    <include name="TC_05_checkLinkDangKy"></include>-->
+<!--                    <include name="TC_06_trongTenDangNhap"></include>-->
+<!--                    <include name="TC_07_trongMatKhau"></include>-->
+<!--                    <include name="TC_08_saiTenDangNhap"></include>-->
+<!--                    <include name="TC_09_tenDNNhoHon10KyTu"></include>-->
+<!--                    <include name="TC_10_tenDNLonHon10KyTu"></include>-->
+<!--                    <include name="TC_11_tenDNKyTuKhac"></include>-->
+<!--                    <include name="TC_12_loginSuccess"></include>-->
+<!--                    <include name="TC_13_MKSai"></include>-->
+<!--                    <include name="TC_14_MKThieuChuHoaKyTuDacBiet"></include>-->
+<!--                    <include name="TC_15_MKThieuChuHoa"></include>-->
+<!--                    <include name="TC_16_MKThieuChuThuong"></include>-->
+<!--                    <include name="TC_17_MKThieuKyTuDacBiet"></include>-->
+<!--                    <include name="TC_18_validateMatkhau"></include>-->
 
                 </methods>
             </class>
+            <class name="com.anhtest.WebCCN.Check_ThemMoiHoso"></class>
+            <class name="com.anhtest.WebCCN.ThemMoiSuccess"></class>
+<!--            <class name="com.anhtest.WebCCN.Validate_FileDinhKem"></class>-->
+<!--            <class name="com.anhtest.WebCCN.Validate_ĐonDangKy"></class>-->
+
+
         </classes>
+    </test>
+    <test name="TestThemmoi">
+        <classes>
+            <class name="com.anhtest.WebCCN.Validate_FileDinhKem"></class>
+            <class name="com.anhtest.WebCCN.Validate_ĐonDangKy"></class>
+            <class name="com.anhtest.WebCCN.Validate_ThemTACN"></class>
+        </classes>
+        
     </test>
 
 </suite>

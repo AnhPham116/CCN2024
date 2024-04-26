@@ -17,7 +17,7 @@ public class Login_Xpathtuongdoi {
         //open web
         driver.get("http://10.10.10.90:3001/auth/login");
 
-        driver.findElement(By.xpath("//input[@placeholder='Tên đăng nhập']")).sendKeys("0303020092");
+        driver.findElement(By.xpath("//input[@placeholder='Tên đăng nhập']")).sendKeys("6666688888");
         driver.findElement(By.xpath("//input[@placeholder='Mật khẩu']")).sendKeys("123456aA@");
         driver.findElement(By.xpath("//button[contains(text(),'Đăng nhập')]")).click();
 

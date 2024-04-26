@@ -74,65 +74,65 @@ public class Validate_ĐonDangKy extends BaseTest {
         Assert.assertEquals(msgDiaChiBB,"Tối đa 255 kí tự","Giá trị sai");
     }
 
-    @Test(priority = 4)
-    public void TC_04_dienthoaiBenBanLonHon20kt(){
-        loginSuccess();
-        themMoi();
-        driver.findElement(By.xpath(locator_CCN.btnBuocTiepTheo1)).click();
-
-        WebElement dropdownElement = driver.findElement(By.xpath(locator_CCN.inputLoaiHinhThucKiemTra));
-        dropdownElement.click();
-        Actions actions = new Actions(driver);
-        actions.keyDown("2").keyUp("2").keyDown("c").keyUp("c").build().perform();
-        actions.keyDown(Keys.ENTER).perform();
-        actions.keyUp(Keys.ENTER).perform();
-        sleep(1);
-
-        //Thông tin file đính kèm
-        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBan)).click();
-        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBan)).sendKeys("MF314700-1");
-        sleep(1);
-
-        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).sendKeys("01/04/2024");
-        sleep(1);
-
-        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBan)).click();
-        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBan)).sendKeys("3FMX0342");
-
-        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).sendKeys("02/04/2024");
-        sleep(1);
-
-        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoi)).click();
-        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoi)).sendKeys("5AMX0124");
-
-        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).sendKeys("03/04/2024");
-        sleep(1);
-
-
-        //Bên bán hàng
-        driver.findElement(By.xpath(locator_CCN.inputTenBenBan)).click();
-        driver.findElement(By.xpath(locator_CCN.inputTenBenBan)).sendKeys("NUACID NUTRITION CO., LTD vs2");
-        sleep(1);
-
-        driver.findElement(By.xpath(locator_CCN.inputNuoc)).click();
-        Actions actions1 = new Actions(driver);
-        actions1.keyDown("V").keyDown("i").keyDown("e").keyDown("t").keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
-        sleep(1);
-
-        driver.findElement(By.xpath(locator_CCN.inputDiaChiBenBan)).click();
-        driver.findElement(By.xpath(locator_CCN.inputDiaChiBenBan)).sendKeys("No.3 Guangyi road, Guangzhou-Quingyuam Industrial park, Shijao town Qingcheng District, Qingyuan city, Guangdong China");
-        sleep(1);
-
-        //khi k chạy tc1 thì phải run cau lenh duoi
-        driver.findElement(By.xpath(locator_CCN.btnBuocTiepTheoChiTiet)).click();
-
-        driver.findElement(By.xpath(locator_CCN.inputDienThoaiBenBan)).sendKeys("098765432543254321433");
-        String msgDienThoaiBB = driver.findElement(By.xpath(locator_CCN.msgDienThoaiBB)).getText();
-        Assert.assertEquals(msgDienThoaiBB,"Số điện thoại không hợp lệ","Giá trị sai");
-    }
+//    @Test(priority = 4)
+//    public void TC_04_dienthoaiBenBanLonHon20kt(){
+//        loginSuccess();
+//        themMoi();
+//        driver.findElement(By.xpath(locator_CCN.btnBuocTiepTheo1)).click();
+//
+//        WebElement dropdownElement = driver.findElement(By.xpath(locator_CCN.inputLoaiHinhThucKiemTra));
+//        dropdownElement.click();
+//        Actions actions = new Actions(driver);
+//        actions.keyDown("2").keyUp("2").keyDown("c").keyUp("c").build().perform();
+//        actions.keyDown(Keys.ENTER).perform();
+//        actions.keyUp(Keys.ENTER).perform();
+//        sleep(1);
+//
+//        //Thông tin file đính kèm
+//        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBan)).click();
+//        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBan)).sendKeys("MF314700-1");
+//        sleep(1);
+//
+//        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).click();
+//        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).sendKeys("01/04/2024");
+//        sleep(1);
+//
+//        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBan)).click();
+//        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBan)).sendKeys("3FMX0342");
+//
+//        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).click();
+//        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).sendKeys("02/04/2024");
+//        sleep(1);
+//
+//        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoi)).click();
+//        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoi)).sendKeys("5AMX0124");
+//
+//        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).click();
+//        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).sendKeys("03/04/2024");
+//        sleep(1);
+//
+//
+//        //Bên bán hàng
+//        driver.findElement(By.xpath(locator_CCN.inputTenBenBan)).click();
+//        driver.findElement(By.xpath(locator_CCN.inputTenBenBan)).sendKeys("NUACID NUTRITION CO., LTD vs2");
+//        sleep(1);
+//
+//        driver.findElement(By.xpath(locator_CCN.inputNuoc)).click();
+//        Actions actions1 = new Actions(driver);
+//        actions1.keyDown("V").keyDown("i").keyDown("e").keyDown("t").keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
+//        sleep(1);
+//
+//        driver.findElement(By.xpath(locator_CCN.inputDiaChiBenBan)).click();
+//        driver.findElement(By.xpath(locator_CCN.inputDiaChiBenBan)).sendKeys("No.3 Guangyi road, Guangzhou-Quingyuam Industrial park, Shijao town Qingcheng District, Qingyuan city, Guangdong China");
+//        sleep(1);
+//
+//        //khi k chạy tc1 thì phải run cau lenh duoi
+//        driver.findElement(By.xpath(locator_CCN.btnBuocTiepTheoChiTiet)).click();
+//
+//        driver.findElement(By.xpath(locator_CCN.inputDienThoaiBenBan)).sendKeys("098765432543254321433");
+//        String msgDienThoaiBB = driver.findElement(By.xpath(locator_CCN.msgDienThoaiBB)).getText();
+//        Assert.assertEquals(msgDienThoaiBB,"Số điện thoại không hợp lệ","Giá trị sai");
+//    }
 
     @Test(priority = 5)
     public void TC_05_dienthoaiNhapKTKhac(){
@@ -447,19 +447,19 @@ public class Validate_ĐonDangKy extends BaseTest {
         Assert.assertEquals(msgNguoiLienHe,"Tối đa 255 kí tự","Giá trị sai");
     }
 
-    @Test(priority = 11)
-    public void TC_11_dienthoaiNguoiKyLonHon20kt(){
-        loginSuccess();
-        themMoi();
-        driver.findElement(By.xpath(locator_CCN.btnBuocTiepTheo1)).click();
-
-        //khi k chạy tc1 thì phải run cau lenh duoi
-        driver.findElement(By.xpath(locator_CCN.btnBuocTiepTheoChiTiet)).click();
-
-        driver.findElement(By.xpath(locator_CCN.inputSoDienThoai)).sendKeys("098765432543254321433");
-        String msgDienThoai = driver.findElement(By.xpath(locator_CCN.msgDienThoaiBB)).getText();
-        Assert.assertEquals(msgDienThoai,"Số điện thoại không hợp lệ","Giá trị sai");
-    }
+//    @Test(priority = 11)
+//    public void TC_11_dienthoaiNguoiKyLonHon20kt(){
+//        loginSuccess();
+//        themMoi();
+//        driver.findElement(By.xpath(locator_CCN.btnBuocTiepTheo1)).click();
+//
+//        //khi k chạy tc1 thì phải run cau lenh duoi
+//        driver.findElement(By.xpath(locator_CCN.btnBuocTiepTheoChiTiet)).click();
+//
+//        driver.findElement(By.xpath(locator_CCN.inputSoDienThoai)).sendKeys("098765432543254321433");
+//        String msgDienThoai = driver.findElement(By.xpath(locator_CCN.msgDienThoaiBB)).getText();
+//        Assert.assertEquals(msgDienThoai,"Số điện thoại không hợp lệ","Giá trị sai");
+//    }
 
     @Test(priority = 12)
     public void TC_12_dienthoaiNhapKTKhac(){

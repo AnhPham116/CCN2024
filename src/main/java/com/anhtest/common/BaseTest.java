@@ -17,10 +17,13 @@ import java.util.List;
 public class BaseTest {
     public static WebDriver driver;
 
+    public static String userName = "6666688888";
+    public static String passWord = "123456aA@";
+
     @BeforeMethod //Chạy trước mỗi @Test
     //@BeforeClass
     public void createBrowser() {
-       // driver = new ChromeDriver();
+       //driver = new ChromeDriver();
         driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
@@ -80,7 +83,7 @@ public class BaseTest {
         }
     }
 
-//    public void loginSuccess(){
+//    public  void loginSuccess(){
 //       driver.get(InfoCCN.URL);
 //        driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("6666688888");
 //        driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123456aA@");

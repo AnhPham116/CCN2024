@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Them Moi" verbose="1">
+    <test name="ThemMoi">
+        <classes>
+            <class name="com.anhtest.WebCCN.Validate_ThemTACN"></class>
+            <class name="com.anhtest.WebCCN.Validate_ĐonDangKy"></class>
+            <class name="com.anhtest.WebCCN.Validate_FileDinhKem"></class>
+
+        </classes>
+    </test>
+
+</suite>

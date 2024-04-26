@@ -15,13 +15,11 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
 public class ThemMoiSuccess extends BaseTest {
-    String useName = "6666688888";
-    String passWord = "123456aA@";
 
     @Test
     public void LoginSuccess() {
         driver.get(InfoCCN.URL);
-        driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys(useName);
+        driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys(userName);
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys(passWord);
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
         driver.findElement(By.xpath(locator_CCN.dangKiKiemTra)).click();
@@ -432,7 +430,7 @@ public class ThemMoiSuccess extends BaseTest {
 
         String Url = driver.getCurrentUrl();
 
-        Assert.assertNotEquals(Url, "http://10.10.10.90:3001/dangkykiemtra", "Navigation failed");
+        Assert.assertNotEquals(Url, "http://dnccn.earchive.vn/dangkykiemtra", "Navigation failed");
 
     }
 

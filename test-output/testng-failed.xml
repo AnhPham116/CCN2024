@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CCN2024(failed)">
+    <classes>
+      <class name="com.anhtest.WebCCN.LoginTest">
+        <methods>
+          <include name="TC_04_checkLinkQuenMK"/>
+          <include name="TC_05_checkLinkDangKy"/>
+          <include name="createBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.anhtest.WebCCN.LoginTest -->
+    </classes>
+  </test> <!-- CCN2024(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
