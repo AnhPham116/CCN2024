@@ -29,14 +29,14 @@ public class locator_CCN {
     public static String firstSearch = "//a[normalize-space()='BNNPTNT252410000188']";
 
     public static String dropdownLoaiHS = "//body/div[contains(@class,'px-12 py-12')]/div/div/div[2]";
-    //public static String searchLoaiHS =
+    public static String getTxtTrangThaiHS= "/html[1]/body[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[2]/div[2]/div[1]/div[2]/div[1]";
 
 
     public static String  textThemMoiHS = "//h3[contains(text(),'Thêm mới hồ sơ')]";
 
     //Trang thêm file
     public static String  chonFile = "//div[@role='presentation']";
-    public static String buttonXacNhan = "//button[contains(text(),'Xác nhận')]";
+    public static String buttonXacNhan = "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/button[1]";
     public static String btnBuocTiepTheo = "//button[@type='button'][contains(text(),'Bước tiếp theo')]" ;
     public static String btnBuocTiepTheoFile = "//body/div[contains(@class,'px-12 py-12')]/div/div/div[contains(@class,'mt-10')]/div/div[contains(@class,'p-4 h-full bg-gray-50 border border-gray-200 rounded-lg')]/div[1]/button[1]" ;
 
@@ -170,9 +170,9 @@ public class locator_CCN {
     public static String buttonLuu = "//button[@id='btn_taomoi']";
 
     public static String buttonTimKiemMaTACN_DVC = "//body/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/form[1]/div[2]/div[1]/div[2]/div[1]/div[6]/div[1]/div[1]/button[1]";
-    public static String checkBoxChonTACN1 = "//input[@id='28880']";
+    public static String checkBoxChonTACN1 = "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/input[1]";
 
-    public static String checkBoxChonTACN2 = "//input[@id='13813']";
+    public static String checkBoxChonTACN2 = "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/input[1]";
     public static String buttonChonTACN = "//body/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[2]/form[1]/div[2]/button[3]";
 
 

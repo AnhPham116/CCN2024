@@ -13,7 +13,7 @@ public class LoginTest extends BaseTest {
     @Test(priority = 1)
     public void TC_01_validateCurrentUrl(){
         String loginPageUrl = driver.getCurrentUrl();
-        Assert.assertEquals(loginPageUrl,"http://dnccn.earchive.vn/auth/login");
+        Assert.assertEquals(loginPageUrl,"http://10.10.10.90:3001/auth/login");
     }
 
     @Test (priority = 2)
@@ -39,21 +39,19 @@ public class LoginTest extends BaseTest {
         driver.findElement(By.xpath(locator_CCN.linkForgotPassword)).click();
         // Kiểm tra xem đã điều hướng đến trang khác hay chưa
         String urlForgotPass = driver.getCurrentUrl();
-        Assert.assertEquals(urlForgotPass, "http://dnccn.earchive.vn/auth/forgotpassword", "Navigation failed");
+        Assert.assertEquals(urlForgotPass, "http://10.10.10.90:3001/auth/forgotpassword", "Navigation failed");
     }
 
     @Test (priority = 5)
     public void TC_05_checkLinkDangKy(){
-
         driver.findElement(By.xpath(locator_CCN.linkDangKy)).click();
         // Kiểm tra xem đã điều hướng đến trang khác hay chưa
         String checkurl = driver.getCurrentUrl();
-        Assert.assertEquals(checkurl, "http://dnccn.earchive.vn/auth/register", "Navigation failed");
+        Assert.assertEquals(checkurl, "http://10.10.10.90:3001/auth/register", "Navigation failed");
     }
 
     @Test (priority = 6)
     public void TC_06_trongTenDangNhap(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123456aA@");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
         sleep(1);
@@ -64,7 +62,6 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 7)
     public void TC_07_trongMatKhau(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("6666688888");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
         sleep(1);
@@ -74,8 +71,7 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 8)
     public void TC_08_saiTenDangNhap(){
-        // driver.get(InfoCCN.URL);
-        driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("666668888899");
+        driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("9999999999");
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123456aA@");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
         sleep(1);
@@ -88,7 +84,6 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 9)
     public void TC_09_tenDNNhoHon10KyTu(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("66");
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123456aA@");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
@@ -100,7 +95,6 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 10)
     public void TC_10_tenDNLonHon10KyTu(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("66666888888123456");
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123456aA@");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
@@ -112,7 +106,6 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 11)
     public void TC_11_tenDNKyTuKhac(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("abc@#$#");
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123456aA@");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
@@ -122,11 +115,8 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(alertMessage,"Tài khoản hoặc mật khẩu không chính xác","Thông báo sai");
     }
 
-
-
     @Test (priority = 12)
     public void TC_12_loginSuccess(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("6666688888");
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123456aA@");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
@@ -138,7 +128,6 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 13)
     public void TC_13_MKSai(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("6666688888");
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
@@ -150,7 +139,6 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 14)
     public void TC_14_MKThieuChuHoaKyTuDacBiet(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("6666688888");
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("12345");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
@@ -162,7 +150,6 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 15)
     public void TC_15_MKThieuChuHoa(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("6666688888");
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123456a@@");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
@@ -175,7 +162,6 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 16)
     public void TC_16_MKThieuChuThuong(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("6666688888");
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123456AA@");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
@@ -188,7 +174,6 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 17)
     public void TC_17_MKThieuKyTuDacBiet(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("6666688888");
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123456AAa");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();
@@ -200,7 +185,6 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 18)
     public void TC_18_validateMatkhau(){
-        // driver.get(InfoCCN.URL);
         driver.findElement(By.xpath(locator_CCN.inputUsername)).sendKeys("6666688888");
         driver.findElement(By.xpath(locator_CCN.inputPassword)).sendKeys("123456AAa");
         driver.findElement(By.xpath(locator_CCN.buttonLogin)).click();

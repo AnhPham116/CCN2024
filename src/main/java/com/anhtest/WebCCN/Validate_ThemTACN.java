@@ -50,21 +50,21 @@ public class Validate_ThemTACN extends BaseTest {
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).sendKeys("01/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).sendKeys("04/25/2024");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBan)).click();
         driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBan)).sendKeys("3FMX0342");
 
         driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).sendKeys("02/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).sendKeys("04/26/2024");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoi)).click();
         driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoi)).sendKeys("5AMX0124");
 
         driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).sendKeys("03/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).sendKeys("04/27/2024");
         sleep(1);
 
 
@@ -88,7 +88,7 @@ public class Validate_ThemTACN extends BaseTest {
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputFaxBenBan)).click();
-        driver.findElement(By.xpath(locator_CCN.inputFaxBenBan)).sendKeys("999999999");
+        driver.findElement(By.xpath(locator_CCN.inputFaxBenBan)).sendKeys("028 123 345");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputNoiXuatHang)).click();
@@ -157,7 +157,7 @@ public class Validate_ThemTACN extends BaseTest {
         driver.findElement(By.xpath(locator_CCN.inputThongTinNoiKy)).click();
 
         Actions actions3 = new Actions(driver);
-        actions3.keyDown("H").keyDown("a").build().perform();
+        actions3.keyDown("H").keyDown("a").keyDown("i").build().perform();
         actions3.keyDown(Keys.ENTER).perform();
         actions3.keyUp(Keys.ENTER).perform();
         sleep(1);

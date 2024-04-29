@@ -39,21 +39,21 @@ public class Check_ThemMoiHoso extends BaseTest {
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).sendKeys("01/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).sendKeys("04/26/2024");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBan)).click();
         driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBan)).sendKeys("3FMX0342");
 
         driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).sendKeys("02/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).sendKeys("04/27/2024");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoi)).click();
         driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoi)).sendKeys("5AMX0124");
 
         driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).sendKeys("03/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).sendKeys("04/29/2024");
         sleep(1);
 
 
@@ -64,7 +64,7 @@ public class Check_ThemMoiHoso extends BaseTest {
 
         driver.findElement(By.xpath(locator_CCN.inputNuoc)).click();
         Actions actions1 = new Actions(driver);
-        actions1.keyDown("V").keyDown("i").keyDown("e").keyDown("t").keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
+        actions1.keyDown("T").keyDown("r").keyDown("u").keyDown("n").keyDown("g").keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
 //        actions.keyDown(Keys.ENTER).perform();
 //        actions.keyUp(Keys.ENTER).perform();
         sleep(1);
@@ -94,12 +94,12 @@ public class Check_ThemMoiHoso extends BaseTest {
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienTu)).click();
-        driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienTu)).sendKeys("04/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienTu)).sendKeys("04/26/2024");
         sleep(1);
 
 
         driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienDen)).click();
-        driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienDen)).sendKeys("04/05/2024");
+        driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienDen)).sendKeys("04/30/2024");
         sleep(1);
 
         //Thông tin lấy mẫu kiểm tra
@@ -108,11 +108,11 @@ public class Check_ThemMoiHoso extends BaseTest {
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauTu)).click();
-        driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauTu)).sendKeys("01/20/2024");
+        driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauTu)).sendKeys("04/26/2024");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauDen)).click();
-        driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauDen)).sendKeys("02/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauDen)).sendKeys("04/30/2024");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputDiaDiemDangKy)).click();
@@ -146,7 +146,7 @@ public class Check_ThemMoiHoso extends BaseTest {
         driver.findElement(By.xpath(locator_CCN.inputThongTinNoiKy)).click();
 
         Actions actions3 = new Actions(driver);
-        actions3.keyDown("H").keyDown("a").build().perform();
+        actions3.keyDown("H").keyDown("a").keyDown("i").build().perform();
         actions3.keyDown(Keys.ENTER).perform();
         actions3.keyUp(Keys.ENTER).perform();
         sleep(1);

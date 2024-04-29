@@ -36,12 +36,7 @@ public class ThemMoiSuccess extends BaseTest {
         browseButton.click();
         sleep(2);
         String folderPath = "D:\\Test_AB\\50hoso\\BNNPTNT25230062420";
-        String fileString = "\"TCCS Threonine Xinjiang.pdf\" \"TCCS Fra Butyrin hybrid dry.pdf.pdf\" \"Packing list.pdf\" \"MF314700-1.pdf\" \"Khac_2.pdf\" \"Khac_1.pdf\" \"ISO 9001 certificate.pdf.pdf\" \"HD_FAMI QS Xinjiang Meihua.pdf.pdf\" \"HD_COA.pdf.pdf\" \"FMX0342.pdf\"  ";
-//        String fileString = "\"TCCS Threonine Xinjiang.pdf\" \"Packing list.pdf\" \"MF314700-1.pdf\" \"Khac_2.pdf\" \"Khac_1.pdf\" \"ISO 9001 certificate.pdf.pdf\" \"HD_TCCS Threonine Xinjiang.pdf.pdf\" \"HD_FAMI QS Xinjiang Meihua.pdf.pdf\" \"HD_COA.pdf.pdf\" \"FAMI QS Xinjiang Meihua.pdf.pdf\"  ";
-
-
-        //  String fileString = "\\\"3FMX0342.pdf\\\" \\\"COA.pdf.pdf\\\" \\\"FAMI QS Xinjiang Meihua.pdf.pdf\\\" \\\"HD_COA.pdf.pdf\\\" \\\"HD_FAMI QS Xinjiang Meihua.pdf.pdf\\\" \\\"HD_TCCS Threonine Xinjiang.pdf.pdf\\\" \\\"ISO 9001 certificate.pdf.pdf\\\" \\\"Khac_1.pdf\\\" \\\"Khac_2.pdf\\\" \\\"MF314700-1.pdf\\\" \\\"Packing list.pdf\\\" \\\"TCCS Threonine Xinjiang.pdf.pdf\\\" ";
-
+        String fileString = "\"TCCS Threonine Xinjiang.pdf\" \"TCCS Fra Butyrin hybrid dry.pdf.pdf\" \"Packing list.pdf\" \"MF314700-1.pdf\" \"Khac_2.pdf\" \"Khac_1.pdf\" \"ISO 9001 certificate.pdf.pdf\" \"HD_FAMI QS Xinjiang Meihua.pdf.pdf\" \"HD_COA.pdf.pdf\" \"FMX0342.pdf\" ";
 
         sleep(2);
         // Sao chép đường dẫn tệp tin vào clipboard
@@ -67,9 +62,7 @@ public class ThemMoiSuccess extends BaseTest {
 
         robot.keyPress(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_V);
-
         robot.keyPress(KeyEvent.VK_ENTER);
-
         sleep(1);
 
 
@@ -100,21 +93,21 @@ public class ThemMoiSuccess extends BaseTest {
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).sendKeys("01/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputHopDongMuaBanNgay)).sendKeys("04/25/2024");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBan)).click();
         driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBan)).sendKeys("3FMX0342");
 
         driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).sendKeys("02/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputHoaDonMuaBanNgay)).sendKeys("04/26/2024");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoi)).click();
         driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoi)).sendKeys("5AMX0124");
 
         driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).click();
-        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).sendKeys("03/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputPhieuDongGoiNgay)).sendKeys("04/27/2024");
         sleep(1);
 
 
@@ -125,7 +118,7 @@ public class ThemMoiSuccess extends BaseTest {
 
         driver.findElement(By.xpath(locator_CCN.inputNuoc)).click();
         Actions actions1 = new Actions(driver);
-        actions1.keyDown("V").keyDown("i").keyDown("e").keyDown("t").keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
+        actions1.keyDown("T").keyDown("r").keyDown("u").keyDown("n").keyDown("g").keyDown(Keys.ENTER).keyUp(Keys.ENTER).build().perform();
 //        actions.keyDown(Keys.ENTER).perform();
 //        actions.keyUp(Keys.ENTER).perform();
         sleep(1);
@@ -147,7 +140,7 @@ public class ThemMoiSuccess extends BaseTest {
 
         //Bên mua hàng
         driver.findElement(By.xpath(locator_CCN.inputFaxBenMua)).click();
-        driver.findElement(By.xpath(locator_CCN.inputFaxBenMua)).sendKeys("66668888");
+        driver.findElement(By.xpath(locator_CCN.inputFaxBenMua)).sendKeys("028 123 456");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputNoiNhanHang)).click();
@@ -155,12 +148,12 @@ public class ThemMoiSuccess extends BaseTest {
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienTu)).click();
-        driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienTu)).sendKeys("04/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienTu)).sendKeys("04/28/2024");
         sleep(1);
 
 
         driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienDen)).click();
-        driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienDen)).sendKeys("04/05/2024");
+        driver.findElement(By.xpath(locator_CCN.inputTGNhapKhauDuKienDen)).sendKeys("05/05/2024");
         sleep(1);
 
         //Thông tin lấy mẫu kiểm tra
@@ -169,11 +162,11 @@ public class ThemMoiSuccess extends BaseTest {
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauTu)).click();
-        driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauTu)).sendKeys("01/20/2024");
+        driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauTu)).sendKeys("04/25/2024");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauDen)).click();
-        driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauDen)).sendKeys("02/04/2024");
+        driver.findElement(By.xpath(locator_CCN.inputNgayDangKyLayMauDen)).sendKeys("05/04/2024");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputDiaDiemDangKy)).click();
@@ -189,7 +182,7 @@ public class ThemMoiSuccess extends BaseTest {
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputDiaChi)).click();
-        driver.findElement(By.xpath(locator_CCN.inputDiaChi)).sendKeys("Hải Dương");
+        driver.findElement(By.xpath(locator_CCN.inputDiaChi)).sendKeys("Hải Phòng");
         sleep(1);
 
         driver.findElement(By.xpath(locator_CCN.inputEmail)).click();
@@ -207,7 +200,7 @@ public class ThemMoiSuccess extends BaseTest {
         driver.findElement(By.xpath(locator_CCN.inputThongTinNoiKy)).click();
 
         Actions actions3 = new Actions(driver);
-        actions3.keyDown("H").keyDown("a").build().perform();
+        actions3.keyDown("H").keyDown("a").keyDown("i").build().perform();
         actions3.keyDown(Keys.ENTER).perform();
         actions3.keyUp(Keys.ENTER).perform();
         sleep(1);
@@ -430,7 +423,8 @@ public class ThemMoiSuccess extends BaseTest {
 
         String Url = driver.getCurrentUrl();
 
-        Assert.assertNotEquals(Url, "http://dnccn.earchive.vn/dangkykiemtra", "Navigation failed");
+        Assert.assertNotEquals(Url, "http://10.10.10.90:3001/dangkykiemtra", "Navigation failed");
+
 
     }
 
